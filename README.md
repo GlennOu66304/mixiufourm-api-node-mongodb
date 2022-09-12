@@ -1,4 +1,11 @@
 # mixiuFourm BackEnd README
+
+[(node:9511) ExperimentalWarning: The ESM module loader is experimental](https://stackoverflow.com/questions/63317051/node9511-experimentalwarning-the-esm-module-loader-is-experimental)
+```
+10
+
+you can use Node v14.12.0; where this probleme is solved, and read this doc https://nodejs.org/api/esm.html#esm_package_json_type_field
+```
 # UI Feature Description:PM will finish this part
 I.UI Flow:
 1.sign up, then go to the login page to fill the crenditional ;
