@@ -52,7 +52,7 @@ export default {
       });
     }
   },
-// log out
+  // log out
   signin: (req, res) => {
     //  validate the login
     const { errors, isValid } = validateLoginInput(req.body);

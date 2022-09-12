@@ -78,6 +78,6 @@ if (process.env.NODE_ENV === "production") {
 }
 
 // app listening port
-app.listen(PORT, () =>
+app.listen(PORT || 3000, () =>
   console.log(`App is listening at http://localhost:${PORT}`)
 );
