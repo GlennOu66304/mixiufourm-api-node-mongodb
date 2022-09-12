@@ -1,0 +1,111 @@
+{
+	"info": {
+		"_postman_id": "0aff76e1-3b3b-421f-beff-259a16a42657",
+		"name": "MEVN-bucket-list",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "1.build a post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n     \"description\":\"Sleeping in Igloo3\"\n    \n\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/bucketListItems/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"bucketListItems",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "2.get post",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/bucketListItems/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"bucketListItems",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "3.update post",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"description\":\"update the description\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/bucketListItems/624aeb5d606bca68b008fc2d",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"bucketListItems",
+						"624aeb5d606bca68b008fc2d"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "4.delete post",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/bucketListItems/624aeb87606bca68b008fc2f",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"bucketListItems",
+						"624aeb87606bca68b008fc2f"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

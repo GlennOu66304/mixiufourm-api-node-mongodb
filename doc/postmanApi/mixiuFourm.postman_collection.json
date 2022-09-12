@@ -1,0 +1,1014 @@
+{
+	"info": {
+		"_postman_id": "0aff76e1-3b3b-421f-beff-259a16a42657",
+		"name": "mixiuFourm",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "1.user",
+			"item": [
+				{
+					"name": "0.test",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8899/sign",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8899",
+							"path": [
+								"sign"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "1.register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{   \"name\":\"7789\",\n    \"email\":\"77789@qq.com\",\n    \"password\":\"123456\",\n    \"password2\":\"123456\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8899/signup",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8899",
+							"path": [
+								"signup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "1.login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\":\"7778@qq.com\",\n    \"password\":\"123456\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8899/signin",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8899",
+							"path": [
+								"signin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "4.current",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyNGJmMzZiMDdlNzNkNzE4ZTdkZjc1OCIsIm5hbWUiOiJKY2FraWUiLCJpYXQiOjE2NDkxNTQ5NTMsImV4cCI6MTY0OTE1ODU1M30.2sTARgyrrHsB00pqN4ycgb48ghHVoN6B9yh0U5pNxvU",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"Jcakie\",\n    \"email\":\"67789@qq.com\",\n    \"password\":\"123456\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8899/current",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8899",
+							"path": [
+								"current"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "0.sample_request",
+			"item": [
+				{
+					"name": "1.build a post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n     \"description\":\"Sleeping in Igloo3\"\n    \n\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8899/api/bucketListItems/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8899",
+							"path": [
+								"api",
+								"bucketListItems",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "2.get post",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8899/api/bucketListItems/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8899",
+							"path": [
+								"api",
+								"bucketListItems",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "3.update post",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"description\":\"update the description\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8899/api/bucketListItems/624bc7cc0f5d8149e58eaf2a",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8899",
+							"path": [
+								"api",
+								"bucketListItems",
+								"624bc7cc0f5d8149e58eaf2a"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "4.delete post",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8899/api/bucketListItems/624aeb87606bca68b008fc2f",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8899",
+							"path": [
+								"api",
+								"bucketListItems",
+								"624aeb87606bca68b008fc2f"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "2.Profile",
+			"item": [
+				{
+					"name": "0.test",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyNGMzNzI4YmU3MDlhYWEzOGU5ZDE3ZiIsIm5hbWUiOiJKeXl5eSIsImlhdCI6MTY0OTE4MDczNCwiZXhwIjoxNjQ5MTg0MzM0fQ.4zztKO52mFyDeNzcaCyWNCTB-_7Xo2Ftfu1S3FuAnQY",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8899/api/profile",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8899",
+							"path": [
+								"api",
+								"profile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "1.build Profile",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyNGMzNzI4YmU3MDlhYWEzOGU5ZDE3ZiIsIm5hbWUiOiJKeXl5eSIsImlhdCI6MTY0OTI0OTU1NywiZXhwIjoxNjQ5MjUzMTU3fQ.Aa0kS5BD1OmkQfkiaVu4aORl7qZ29qMix0Kc_rQETHI",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"handle\":\"yy5\",\n    \"status\":\"Front End\",\n    \"skills\":\"html,css\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8899/profile",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8899",
+							"path": [
+								"profile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "2.get OneProfile",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyNGQ5ZWJjZDA3YjVlMzI4YjAwOWUzOCIsIm5hbWUiOiI3Nzg5IiwiaWF0IjoxNjQ5MjY4NDUwLCJleHAiOjE2NDkyNzIwNTB9.sf3UW-YnHgc9EGeXOD0umkV6iPRTZo4gEOK5Sd_O5l4",
+								"type": "text"
+							},
+							{
+								"key": "",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8899/profile",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8899",
+							"path": [
+								"profile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "3.findProfileByHandle",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyNGMzNzI4YmU3MDlhYWEzOGU5ZDE3ZiIsIm5hbWUiOiJKeXl5eSIsImlhdCI6MTY0OTI0OTU1NywiZXhwIjoxNjQ5MjUzMTU3fQ.Aa0kS5BD1OmkQfkiaVu4aORl7qZ29qMix0Kc_rQETHI",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8899/profile/handle/test1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8899",
+							"path": [
+								"profile",
+								"handle",
+								"test1"
+							],
+							"query": [
+								{
+									"key": "handle",
+									"value": "test1",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "4.findProfileById",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyNGMzNzI4YmU3MDlhYWEzOGU5ZDE3ZiIsIm5hbWUiOiJKeXl5eSIsImlhdCI6MTY0OTI0OTU1NywiZXhwIjoxNjQ5MjUzMTU3fQ.Aa0kS5BD1OmkQfkiaVu4aORl7qZ29qMix0Kc_rQETHI",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8899/profile/handle/test1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8899",
+							"path": [
+								"profile",
+								"handle",
+								"test1"
+							],
+							"query": [
+								{
+									"key": "handle",
+									"value": "test1",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "5.getAll",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyNGMzNzI4YmU3MDlhYWEzOGU5ZDE3ZiIsIm5hbWUiOiJKeXl5eSIsImlhdCI6MTY0OTI0OTU1NywiZXhwIjoxNjQ5MjUzMTU3fQ.Aa0kS5BD1OmkQfkiaVu4aORl7qZ29qMix0Kc_rQETHI",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8899/profile/all",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8899",
+							"path": [
+								"profile",
+								"all"
+							],
+							"query": [
+								{
+									"key": "handle",
+									"value": "test1",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "6.deleteUserAndProfile",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyNGQ5ZWJjZDA3YjVlMzI4YjAwOWUzOCIsIm5hbWUiOiI3Nzg5IiwiaWF0IjoxNjQ5MjcwOTQ3LCJleHAiOjE2NDkyNzQ1NDd9.FXCUJepUw3NlDX3bZRnxQVrVJ7n7ffnUm2BOP5Fsah4",
+								"type": "text"
+							},
+							{
+								"key": "",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8899/profile/user/624d9ebcd07b5e328b009e38",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8899",
+							"path": [
+								"profile",
+								"user",
+								"624d9ebcd07b5e328b009e38"
+							],
+							"query": [
+								{
+									"key": "handle",
+									"value": "test1",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "3.Education and experience",
+			"item": [
+				{
+					"name": "0.build experience",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyNGQ5ZWJjZDA3YjVlMzI4YjAwOWUzOCIsIm5hbWUiOiI3Nzg5IiwiaWF0IjoxNjQ5MjY4NDUwLCJleHAiOjE2NDkyNzIwNTB9.sf3UW-YnHgc9EGeXOD0umkV6iPRTZo4gEOK5Sd_O5l4",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"n年前端开发经验\",\n            \"company\": \"某某某国内知名互联网公司\",\n            \"location\": \"北京\",\n            \"from\": \"2009-12-31T18:14:00.000Z\",\n            \"description\": \"设定代码规范, 任务分配, 代码优化等工作\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8899/profile/experience",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8899",
+							"path": [
+								"profile",
+								"experience"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "3.delete experience",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyNGQ5ZWJjZDA3YjVlMzI4YjAwOWUzOCIsIm5hbWUiOiI3Nzg5IiwiaWF0IjoxNjQ5MjY4NDUwLCJleHAiOjE2NDkyNzIwNTB9.sf3UW-YnHgc9EGeXOD0umkV6iPRTZo4gEOK5Sd_O5l4",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"n年前端开发经验\",\n            \"company\": \"某某某国内知名互联网公司\",\n            \"location\": \"北京\",\n            \"from\": \"2009-12-31T18:14:00.000Z\",\n            \"description\": \"设定代码规范, 任务分配, 代码优化等工作\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8899/profile/experience/624dd8edfddbbc609fdb1e52",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8899",
+							"path": [
+								"profile",
+								"experience",
+								"624dd8edfddbbc609fdb1e52"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "4.delete education",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyNGQ5ZWJjZDA3YjVlMzI4YjAwOWUzOCIsIm5hbWUiOiI3Nzg5IiwiaWF0IjoxNjQ5MjY4NDUwLCJleHAiOjE2NDkyNzIwNTB9.sf3UW-YnHgc9EGeXOD0umkV6iPRTZo4gEOK5Sd_O5l4",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"n年前端开发经验\",\n            \"company\": \"某某某国内知名互联网公司\",\n            \"location\": \"北京\",\n            \"from\": \"2009-12-31T18:14:00.000Z\",\n            \"description\": \"设定代码规范, 任务分配, 代码优化等工作\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8899/profile/education/624dca3761edf1556d457fac",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8899",
+							"path": [
+								"profile",
+								"education",
+								"624dca3761edf1556d457fac"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "1.build education",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyNGQ5ZWJjZDA3YjVlMzI4YjAwOWUzOCIsIm5hbWUiOiI3Nzg5IiwiaWF0IjoxNjQ5MjY1MTYyLCJleHAiOjE2NDkyNjg3NjJ9.UiAESoUTdQ4wb18SSE_VvquEbyevulqCEkoE8IuDJas",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n     \"school\": \"某某某高校计算机\",\n            \"degree\": \"研究生\",\n            \"fieldofstudy\": \"计算机科学与技术\",\n            \"from\": \"2007-12-31T18:14:00.000Z\",\n            \"to\": \"2010-12-31T18:14:00.000Z\",\n            \"description\": \"在校期间,表现优异, 并有上线作品.\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8899/profile/education",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8899",
+							"path": [
+								"profile",
+								"education"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "4.PostInformation",
+			"item": [
+				{
+					"name": "1.build Post",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyNGQ5ZTljZDA3YjVlMzI4YjAwOWUzNyIsIm5hbWUiOiI3NyIsImlhdCI6MTY0OTM1NjQzOSwiZXhwIjoxNjQ5MzYwMDM5fQ.tbr58T7BNzC2woSfveWZrBzSfuBk6DuYCG9j2SCal0s",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n      \"text\": \"this is a text3\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8899/post",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8899",
+							"path": [
+								"post"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "2.get Post",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyNGQ5ZWJjZDA3YjVlMzI4YjAwOWUzOCIsIm5hbWUiOiI3Nzg5IiwiaWF0IjoxNjQ5MjY4NDUwLCJleHAiOjE2NDkyNzIwNTB9.sf3UW-YnHgc9EGeXOD0umkV6iPRTZo4gEOK5Sd_O5l4",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"n年前端开发经验\",\n            \"company\": \"某某某国内知名互联网公司\",\n            \"location\": \"北京\",\n            \"from\": \"2009-12-31T18:14:00.000Z\",\n            \"description\": \"设定代码规范, 任务分配, 代码优化等工作\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8899/post",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8899",
+							"path": [
+								"post"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "3.getOne Post",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyNGQ5ZWJjZDA3YjVlMzI4YjAwOWUzOCIsIm5hbWUiOiI3Nzg5IiwiaWF0IjoxNjQ5MjY4NDUwLCJleHAiOjE2NDkyNzIwNTB9.sf3UW-YnHgc9EGeXOD0umkV6iPRTZo4gEOK5Sd_O5l4",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"n年前端开发经验\",\n            \"company\": \"某某某国内知名互联网公司\",\n            \"location\": \"北京\",\n            \"from\": \"2009-12-31T18:14:00.000Z\",\n            \"description\": \"设定代码规范, 任务分配, 代码优化等工作\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8899/post/624f12c0b125672cc52c09f0",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8899",
+							"path": [
+								"post",
+								"624f12c0b125672cc52c09f0"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "0.testRoute",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": " Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyNGQ5ZTljZDA3YjVlMzI4YjAwOWUzNyIsIm5hbWUiOiI3NyIsImlhdCI6MTY0OTMwODY1OSwiZXhwIjoxNjQ5MzEyMjU5fQ.oh9hLnisK_jJx1yIcfSBGDynDLOzSfsPQZT9jTSWg2k",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"n年前端开发经验\",\n            \"company\": \"某某某国内知名互联网公司\",\n            \"location\": \"北京\",\n            \"from\": \"2009-12-31T18:14:00.000Z\",\n            \"description\": \"设定代码规范, 任务分配, 代码优化等工作\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8899/post/test",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8899",
+							"path": [
+								"post",
+								"test"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "4.delete Post",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyNGQ5ZTljZDA3YjVlMzI4YjAwOWUzNyIsIm5hbWUiOiI3NyIsImlhdCI6MTY0OTM1MTA3NCwiZXhwIjoxNjQ5MzU0Njc0fQ.LT0Fb1kB6jo09N1kjqg9QeD3ebKq-vv1Z5tXTiTsTiY",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"n年前端开发经验\",\n            \"company\": \"某某某国内知名互联网公司\",\n            \"location\": \"北京\",\n            \"from\": \"2009-12-31T18:14:00.000Z\",\n            \"description\": \"设定代码规范, 任务分配, 代码优化等工作\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8899/post/624f22e203c1ea365150a0a3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8899",
+							"path": [
+								"post",
+								"624f22e203c1ea365150a0a3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "5.Like and Comment",
+			"item": [
+				{
+					"name": "1.build like",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyNGQ5ZTljZDA3YjVlMzI4YjAwOWUzNyIsIm5hbWUiOiI3NyIsImlhdCI6MTY0OTM1NTg2NywiZXhwIjoxNjQ5MzU5NDY3fQ.gJolNCyPb8-Hk0UNnWKrLdAHToeWp7xc8uVaMZcJxLc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n      \"text\": \"this is a text3\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8899/post/like/624f2ea72ebb763d534ccce4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8899",
+							"path": [
+								"post",
+								"like",
+								"624f2ea72ebb763d534ccce4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "4.delete like",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyNGQ5ZTljZDA3YjVlMzI4YjAwOWUzNyIsIm5hbWUiOiI3NyIsImlhdCI6MTY0OTM1NjQzOSwiZXhwIjoxNjQ5MzYwMDM5fQ.tbr58T7BNzC2woSfveWZrBzSfuBk6DuYCG9j2SCal0s",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"n年前端开发经验\",\n            \"company\": \"某某某国内知名互联网公司\",\n            \"location\": \"北京\",\n            \"from\": \"2009-12-31T18:14:00.000Z\",\n            \"description\": \"设定代码规范, 任务分配, 代码优化等工作\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8899/post/unlike/624f2ea72ebb763d534ccce4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8899",
+							"path": [
+								"post",
+								"unlike",
+								"624f2ea72ebb763d534ccce4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "6.delete Comment",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyNGQ5ZTljZDA3YjVlMzI4YjAwOWUzNyIsIm5hbWUiOiI3NyIsImlhdCI6MTY0OTM5NTIwNSwiZXhwIjoxNjQ5Mzk4ODA1fQ.8xMNgksbvu_1BYrRTm4NAglEOrLg4kxDmRRELKMLUzs",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"n年前端开发经验\",\n            \"company\": \"某某某国内知名互联网公司\",\n            \"location\": \"北京\",\n            \"from\": \"2009-12-31T18:14:00.000Z\",\n            \"description\": \"设定代码规范, 任务分配, 代码优化等工作\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8899/post/comment/624f2ea72ebb763d534ccce4/624fc45ab4128d481f3249c2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8899",
+							"path": [
+								"post",
+								"comment",
+								"624f2ea72ebb763d534ccce4",
+								"624fc45ab4128d481f3249c2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "5.build Comment",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyNGQ5ZTljZDA3YjVlMzI4YjAwOWUzNyIsIm5hbWUiOiI3NyIsImlhdCI6MTY0OTM5NDU5NSwiZXhwIjoxNjQ5Mzk4MTk1fQ.FHSu_l13zENMZZoggUwIiekvrFRgi9FBhsxii6v-JJE",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n        \"text\": \"this is a comment text1\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8899/post/comment/624f2ea72ebb763d534ccce4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8899",
+							"path": [
+								"post",
+								"comment",
+								"624f2ea72ebb763d534ccce4"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
